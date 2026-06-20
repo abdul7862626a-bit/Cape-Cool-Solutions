@@ -12,15 +12,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --navy-dark:#06181B;
-    --navy:#0B2E33;
-    --navy-soft:#123C42;
-    --frost:#F3FAFA;
-    --frost-dim:#C7DBDC;
-    --cyan:#5FD3DD;
-    --amber:#E08A3C;
-    --steel:#7E9698;
-    --line:rgba(243,250,250,0.12);
+    --navy-dark:#F5F8FA;
+    --navy:#FFFFFF;
+    --navy-soft:#EAF2F5;
+    --frost:#1A1F22;
+    --frost-dim:#4A5559;
+    --cyan:#3AAED4;
+    --amber:#0E7C9B;
+    --steel:#6B7679;
+    --line:rgba(26,31,34,0.12);
+    --ink:#1A1F22;
   }
 
   *{margin:0;padding:0;box-sizing:border-box;}
@@ -66,7 +67,7 @@
     position:sticky;
     top:0;
     z-index:50;
-    background:rgba(6,24,27,0.88);
+    background:rgba(255,255,255,0.92);
     backdrop-filter:blur(10px);
     border-bottom:1px solid var(--line);
   }
@@ -117,7 +118,7 @@
   }
   .nav-call:hover{
     transform:translateY(-1px);
-    box-shadow:0 6px 18px rgba(224,138,60,0.35);
+    box-shadow:0 6px 18px rgba(14,124,155,0.35);
   }
   .nav-call svg{width:15px;height:15px;}
 
@@ -129,11 +130,11 @@
     overflow:hidden;
     background-color:var(--navy-dark);
     background-image:
-      radial-gradient(circle at 88% 8%, rgba(95,211,221,0.22), transparent 42%),
-      radial-gradient(circle at 6% 92%, rgba(224,138,60,0.16), transparent 45%),
-      repeating-linear-gradient(0deg, rgba(243,250,250,0.045) 0 1px, transparent 1px 64px),
-      repeating-linear-gradient(90deg, rgba(243,250,250,0.045) 0 1px, transparent 1px 64px),
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%235FD3DD' stroke-width='1' stroke-opacity='0.07'%3E%3Cpath d='M60 6v18M60 96v18M6 60h18M96 60h18M27 27l13 13M93 27L80 40M27 93l13-13M93 93L80 80'/%3E%3Ccircle cx='60' cy='60' r='30'/%3E%3C/g%3E%3C/svg%3E");
+      radial-gradient(circle at 88% 8%, rgba(58,174,212,0.16), transparent 42%),
+      radial-gradient(circle at 6% 92%, rgba(14,124,155,0.10), transparent 45%),
+      repeating-linear-gradient(0deg, rgba(26,31,34,0.05) 0 1px, transparent 1px 64px),
+      repeating-linear-gradient(90deg, rgba(26,31,34,0.05) 0 1px, transparent 1px 64px),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%233AAED4' stroke-width='1' stroke-opacity='0.10'%3E%3Cpath d='M60 6v18M60 96v18M6 60h18M96 60h18M27 27l13 13M93 27L80 40M27 93l13-13M93 93L80 80'/%3E%3Ccircle cx='60' cy='60' r='30'/%3E%3C/g%3E%3C/svg%3E");
     background-repeat:no-repeat,no-repeat,repeat,repeat,repeat;
     background-size:auto,auto,64px 64px,64px 64px,120px 120px;
   }
@@ -141,7 +142,7 @@
     content:"";
     position:absolute;
     inset:0;
-    background:linear-gradient(180deg, rgba(6,24,27,0) 0%, rgba(6,24,27,0.55) 100%);
+    background:linear-gradient(180deg, rgba(245,248,250,0) 0%, rgba(245,248,250,0.5) 100%);
     pointer-events:none;
   }
   .hero-grid{
@@ -169,7 +170,7 @@
     width:7px;height:7px;
     border-radius:50%;
     background:var(--cyan);
-    box-shadow:0 0 0 4px rgba(95,211,221,0.18);
+    box-shadow:0 0 0 4px rgba(58,174,212,0.18);
   }
   .hero h1{
     font-size:50px;
@@ -211,7 +212,7 @@
   }
   .btn-primary:hover{
     transform:translateY(-2px);
-    box-shadow:0 10px 24px rgba(224,138,60,0.32);
+    box-shadow:0 10px 24px rgba(14,124,155,0.32);
   }
   .btn-ghost{
     background:transparent;
@@ -409,7 +410,7 @@
   .panel-card:hover .switch::after{
     transform:translateX(15px);
     background:var(--amber);
-    box-shadow:0 0 10px rgba(224,138,60,0.7);
+    box-shadow:0 0 10px rgba(14,124,155,0.7);
   }
   .panel-card h3{
     font-size:15.5px;
@@ -635,7 +636,7 @@
   }
   .story-card:hover{
     transform:translateY(-6px);
-    border-color:rgba(95,211,221,0.4);
+    border-color:rgba(58,174,212,0.4);
     box-shadow:0 16px 32px rgba(0,0,0,0.28);
   }
   .story-art svg{transition:transform .4s ease;}
@@ -653,7 +654,7 @@
   }
   .seal:hover{
     transform:translateY(-5px);
-    border-color:rgba(95,211,221,0.4);
+    border-color:rgba(58,174,212,0.4);
     box-shadow:0 14px 28px rgba(0,0,0,0.25);
   }
   .seal-ring{
@@ -715,19 +716,19 @@
   .hero-orb-1{
     width:260px;height:260px;
     top:-80px;right:6%;
-    background:radial-gradient(circle, rgba(95,211,221,0.35), transparent 70%);
+    background:radial-gradient(circle, rgba(58,174,212,0.35), transparent 70%);
     animation:orb-float-1 9s ease-in-out infinite;
   }
   .hero-orb-2{
     width:180px;height:180px;
     bottom:-60px;left:4%;
-    background:radial-gradient(circle, rgba(224,138,60,0.28), transparent 70%);
+    background:radial-gradient(circle, rgba(14,124,155,0.28), transparent 70%);
     animation:orb-float-2 11s ease-in-out infinite;
   }
   .hero-orb-3{
     width:120px;height:120px;
     top:40%;right:30%;
-    background:radial-gradient(circle, rgba(95,211,221,0.2), transparent 70%);
+    background:radial-gradient(circle, rgba(58,174,212,0.2), transparent 70%);
     animation:orb-float-3 7.5s ease-in-out infinite;
   }
   @keyframes orb-float-1{
@@ -761,8 +762,8 @@
     animation:btn-pulse-glow 2.6s ease-in-out 1s infinite;
   }
   @keyframes btn-pulse-glow{
-    0%,100%{box-shadow:0 0 0 0 rgba(95,211,221,0.45);}
-    50%{box-shadow:0 0 0 10px rgba(95,211,221,0);}
+    0%,100%{box-shadow:0 0 0 0 rgba(58,174,212,0.45);}
+    50%{box-shadow:0 0 0 10px rgba(58,174,212,0);}
   }
   @media (prefers-reduced-motion:reduce){
     .hero-ctas .btn-primary{animation:none;}
@@ -897,12 +898,12 @@
       <div class="story-card reveal">
         <div class="story-art">
           <svg viewBox="0 0 160 120" fill="none">
-            <rect x="46" y="50" width="68" height="42" rx="4" stroke="#5FD3DD" stroke-width="2"/>
-            <line x1="46" y1="68" x2="114" y2="68" stroke="#5FD3DD" stroke-width="2"/>
-            <path d="M66 50v-8a6 6 0 0 1 6-6h16a6 6 0 0 1 6 6v8" stroke="#5FD3DD" stroke-width="2"/>
-            <circle cx="80" cy="68" r="3" fill="#E08A3C"/>
-            <path d="M34 100c10-10 60-58 70-68" stroke="#E08A3C" stroke-width="3" stroke-linecap="round"/>
-            <circle cx="100" cy="34" r="9" stroke="#E08A3C" stroke-width="2.5"/>
+            <rect x="46" y="50" width="68" height="42" rx="4" stroke="#3AAED4" stroke-width="2"/>
+            <line x1="46" y1="68" x2="114" y2="68" stroke="#3AAED4" stroke-width="2"/>
+            <path d="M66 50v-8a6 6 0 0 1 6-6h16a6 6 0 0 1 6 6v8" stroke="#3AAED4" stroke-width="2"/>
+            <circle cx="80" cy="68" r="3" fill="#0E7C9B"/>
+            <path d="M34 100c10-10 60-58 70-68" stroke="#0E7C9B" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="100" cy="34" r="9" stroke="#0E7C9B" stroke-width="2.5"/>
           </svg>
         </div>
         <div class="story-body">
@@ -915,16 +916,16 @@
       <div class="story-card reveal">
         <div class="story-art">
           <svg viewBox="0 0 160 120" fill="none">
-            <circle cx="80" cy="60" r="3" fill="#E08A3C"/>
-            <line x1="80" y1="60" x2="80" y2="34" stroke="#5FD3DD" stroke-width="1.4" stroke-dasharray="3 4"/>
-            <line x1="80" y1="60" x2="46" y2="82" stroke="#5FD3DD" stroke-width="1.4" stroke-dasharray="3 4"/>
-            <line x1="80" y1="60" x2="114" y2="82" stroke="#5FD3DD" stroke-width="1.4" stroke-dasharray="3 4"/>
-            <g transform="translate(80,22)" stroke="#5FD3DD" stroke-width="1.8" stroke-linecap="round">
+            <circle cx="80" cy="60" r="3" fill="#0E7C9B"/>
+            <line x1="80" y1="60" x2="80" y2="34" stroke="#3AAED4" stroke-width="1.4" stroke-dasharray="3 4"/>
+            <line x1="80" y1="60" x2="46" y2="82" stroke="#3AAED4" stroke-width="1.4" stroke-dasharray="3 4"/>
+            <line x1="80" y1="60" x2="114" y2="82" stroke="#3AAED4" stroke-width="1.4" stroke-dasharray="3 4"/>
+            <g transform="translate(80,22)" stroke="#3AAED4" stroke-width="1.8" stroke-linecap="round">
               <path d="M0 -10v20M0 -10l-4 4M0 -10l4 4M0 10l-4-4M0 10l4-4M-10 0h20M-10 0l4-4M-10 0l4 4M10 0l-4-4M10 0l-4 4"/>
             </g>
-            <rect x="34" y="76" width="22" height="28" rx="2" stroke="#5FD3DD" stroke-width="1.8"/>
-            <line x1="34" y1="88" x2="56" y2="88" stroke="#5FD3DD" stroke-width="1.8"/>
-            <path d="M122 74l-9 12h6l-2 12 10-13h-6z" fill="#E08A3C"/>
+            <rect x="34" y="76" width="22" height="28" rx="2" stroke="#3AAED4" stroke-width="1.8"/>
+            <line x1="34" y1="88" x2="56" y2="88" stroke="#3AAED4" stroke-width="1.8"/>
+            <path d="M122 74l-9 12h6l-2 12 10-13h-6z" fill="#0E7C9B"/>
           </svg>
         </div>
         <div class="story-body">
@@ -937,14 +938,14 @@
       <div class="story-card reveal">
         <div class="story-art">
           <svg viewBox="0 0 160 120" fill="none">
-            <circle cx="80" cy="60" r="40" stroke="#5FD3DD" stroke-width="1.3" stroke-dasharray="3 5" opacity="0.6"/>
-            <circle cx="80" cy="60" r="24" stroke="#5FD3DD" stroke-width="1.3" stroke-dasharray="3 5" opacity="0.85"/>
-            <path d="M80 36a14 14 0 0 1 14 14c0 10-14 26-14 26S66 60 66 50a14 14 0 0 1 14-14z" fill="#E08A3C"/>
+            <circle cx="80" cy="60" r="40" stroke="#3AAED4" stroke-width="1.3" stroke-dasharray="3 5" opacity="0.6"/>
+            <circle cx="80" cy="60" r="24" stroke="#3AAED4" stroke-width="1.3" stroke-dasharray="3 5" opacity="0.85"/>
+            <path d="M80 36a14 14 0 0 1 14 14c0 10-14 26-14 26S66 60 66 50a14 14 0 0 1 14-14z" fill="#0E7C9B"/>
             <circle cx="80" cy="50" r="5" fill="#06181B"/>
-            <circle cx="58" cy="74" r="2.5" fill="#5FD3DD"/>
-            <circle cx="104" cy="40" r="2.5" fill="#5FD3DD"/>
-            <circle cx="110" cy="78" r="2.5" fill="#5FD3DD"/>
-            <circle cx="52" cy="44" r="2.5" fill="#5FD3DD"/>
+            <circle cx="58" cy="74" r="2.5" fill="#3AAED4"/>
+            <circle cx="104" cy="40" r="2.5" fill="#3AAED4"/>
+            <circle cx="110" cy="78" r="2.5" fill="#3AAED4"/>
+            <circle cx="52" cy="44" r="2.5" fill="#3AAED4"/>
           </svg>
         </div>
         <div class="story-body">
