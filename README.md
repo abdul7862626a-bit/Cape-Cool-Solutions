@@ -1,2 +1,3 @@
-# J-Refrigerations-Appliance-Repairs
-J Refrigerations &amp; Appliance Repairs is a trusted HVAC and appliance repair company in Cape Town, providing professional aircon installation, refrigeration repairs, cold room services, freezer solutions, electrical work, and general appliance repairs. We deliver fast, reliable, and quality service with 24/7 emergency support for homes and business.
+Cool Solutions is your premier air cooling expert along Cape Town's coastal gems. From the vibrant shores of Milnerton to the luxurious heights of Sea Point, we deliver top-tier air conditioning solutions tailored for Cape Town's elite coastal neighborhoods. Experience the ultimate in comfort and sophistication with our five-star
+
+service.
